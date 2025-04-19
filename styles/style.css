@@ -1,0 +1,60 @@
+/* Основные параметры лендинга */
+
+/* Цвета */
+.white { color: #fff; }
+.white-50 { color: #d7ccc0; }
+.light { color: #f5f4f0; }
+.main { color: #fe8a02; }
+.dark-main { color: #42413c; }
+.dark { color: #2a2626; }
+.dark-50 { color: #908d8b; }
+.brown { color: #b09a81; }
+.blue { color: #1085c5; }
+
+/* Шрифты */
+.open-sans { font-family: 'Open Sans', sans-serif; }
+.neucha { font-family: 'Neucha', cursive; }
+
+/* Размер шрифта: 16px */
+.font-size-16 { font-size: 16px; }
+
+/* Межстрочный интервал: 1.6em */
+.line-height-16 { line-height: 1.6em; }
+
+/* Цвет шрифта: #2A2626 */
+.dark-text { color: #2A2626; }
+
+/* Заголовки */
+.line-height-12 { line-height: 1.2em; }
+.font-size-72 { font-size: 72px; }
+.font-size-60 { font-size: 60px; }
+.font-size-34 { font-size: 34px; }
+
+/* Секции */
+.container { max-width: 1110px; }
+
+/* Ограничение по ширине контента: 1110px */
+.container { max-width: 1110px; }
+
+/* Выравнивание по центру */
+.center { text-align: center; }
+
+/* Отступы по 100 пикселей сверху и снизу */
+.padding-100 { padding: 100px 0; }
+
+body {
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #fe8a02;
+  height: 215px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 581px;
+  width: 1440px;
+  margin: 0 auto;
+}
