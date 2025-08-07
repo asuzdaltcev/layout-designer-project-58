@@ -131,6 +131,223 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Стили для секции preview */
+.preview-section {
+  padding: 100px 0 200px 0; /* Увеличенный нижний отступ для компенсации вылета */
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.preview-title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+  margin-bottom: 30px;
+}
+
+.main-color {
+  color: #fe8a02;
+}
+
+.preview-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #2A2626;
+  margin-bottom: 30px;
+}
+
+.video-link {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.video-preview {
+  width: 919px;
+  height: 517px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  position: relative;
+  z-index: 2;
+  margin-bottom: -100px; /* Вылет на следующую секцию */
+}
+
+/* Стили для секции навигации */
+.navigation-section {
+  background: #42413C;
+  padding: 200px 0 100px 0; /* Дополнительный отступ сверху для компенсации вылета видео */
+}
+
+.navigation-title {
+  font-size: 52px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+}
+
+.navigation-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 350px;
+  height: 323px;
+  background: #F5F4F0;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card:hover:not(.title-card) {
+  background: #FE8A02;
+  color: #fff;
+}
+
+.title-card {
+  background: #42413C;
+  color: #fff;
+  padding: 0;
+}
+
+.card-number {
+  font-size: 64px;
+  font-family: "Neucha", cursive;
+  line-height: 1;
+  margin-bottom: 40px;
+  color: #42413C;
+}
+
+.card:hover:not(.title-card) .card-number {
+  color: #fff;
+}
+
+.card-title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+  color: #FE8A02;
+  margin-bottom: 16px;
+}
+
+.card:hover:not(.title-card) .card-title {
+  color: #fff;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #2A2626;
+  flex-grow: 1;
+}
+
+.card:hover:not(.title-card) .card-description {
+  color: #fff;
+}
+
+/* Стили для секций когнитивных искажений */
+.cognitive-bias-section {
+  padding: 100px 0;
+  background: #F5F4F0;
+  position: relative;
+}
+
+.cognitive-bias-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.bias-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.bias-header-left {
+  flex: 0 0 auto;
+}
+
+.bias-header-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bias-image {
+  vertical-align: middle;
+}
+
+.bias-category {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  color: #908D8B;
+  margin-bottom: 10px;
+}
+
+.bias-title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+  color: #2A2626;
+  margin-bottom: 30px;
+}
+
+.bias-description {
+  font-size: 34px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+  color: #2A2626;
+}
+
+.manifestation-title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-family: "Neucha", cursive;
+  color: #fff;
+  background: #B09A81;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.manifestation-content {
+  display: flex;
+  gap: 30px;
+}
+
+.manifestation-left,
+.manifestation-right {
+  flex: 1;
+}
+
+.manifestation-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #2A2626;
+}
+
 .footer {
   height: 581px;
 }
