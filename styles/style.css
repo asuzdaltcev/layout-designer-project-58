@@ -88,7 +88,7 @@ h1 {
 
 .header-title {
   font-size: 72px;
-  line-height: 1.2;
+  line-height: 1.2em;
   padding-top: 100px;
   margin-bottom: 185px;
 }
@@ -105,11 +105,26 @@ h1 {
 /* Стили для header-content */
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;
+  gap: 30px;
 }
 
 .header-column {
-  width: 48%;
+  flex: 1;
+}
+
+.header-column p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0;
+  vertical-align: bottom;
+  color: #2A2626;
 }
 
 /* Стили для кнопки */
@@ -127,7 +142,7 @@ h1 {
 /* Стили для main-title */
 .main-title {
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin-bottom: 30px;
 }
 
@@ -141,7 +156,7 @@ h1 {
 
 .preview-title {
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
   margin-bottom: 30px;
 }
@@ -181,7 +196,7 @@ h1 {
 
 .navigation-title {
   font-size: 52px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
 }
 
@@ -230,7 +245,7 @@ h1 {
 
 .card-title {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
   color: #FE8A02;
   margin-bottom: 16px;
@@ -257,6 +272,10 @@ h1 {
   padding: 100px 0;
   background: #F5F4F0;
   position: relative;
+}
+
+#premature-optimization {
+  background: #B09A81;
 }
 
 .cognitive-bias-section::before {
@@ -297,7 +316,7 @@ h1 {
 
 .bias-category {
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: 'Open Sans', sans-serif;
   color: #908D8B;
   margin-bottom: 10px;
@@ -305,7 +324,7 @@ h1 {
 
 .bias-title {
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
   color: #2A2626;
   margin-bottom: 30px;
@@ -313,14 +332,14 @@ h1 {
 
 .bias-description {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
   color: #2A2626;
 }
 
 .manifestation-title {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Neucha", cursive;
   color: #fff;
   background: #B09A81;
@@ -346,6 +365,36 @@ h1 {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   color: #2A2626;
+}
+
+/* Стили для стандартных элементов в секциях когнитивных искажений */
+.cognitive-bias-section h2 {
+  font-size: 60px;
+  line-height: 1.2em;
+  font-family: "Neucha", cursive;
+  color: #2A2626;
+  margin-bottom: 30px;
+}
+
+.cognitive-bias-section ul {
+  padding-left: 20px;
+  margin: 16px 0;
+}
+
+.cognitive-bias-section li {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+  color: inherit;
+  margin-bottom: 8px;
+}
+
+.cognitive-bias-section p {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+  color: #2A2626;
+  margin: 16px 0;
 }
 
 .footer {
