@@ -156,7 +156,7 @@ h1 {
 
 /* Специальные стили для секции предварительного просмотра изображения */
 #preview-image.preview-section {
-  padding-top: 0;
+  padding-top: 100px;
   padding-bottom: unset;
 }
 
