@@ -148,10 +148,20 @@ h1 {
 
 /* Стили для секции preview */
 .preview-section {
-  padding: 100px 0 200px 0; /* Увеличенный нижний отступ для компенсации вылета */
+  padding: 0;
   position: relative;
   z-index: 1;
   text-align: center;
+}
+
+/* Специальные стили для секции предварительного просмотра изображения */
+#preview-image.preview-section {
+  padding-top: 0;
+  padding-bottom: unset;
+}
+
+#preview-image .preview-title {
+  padding-top: 70px;
 }
 
 .preview-title {
