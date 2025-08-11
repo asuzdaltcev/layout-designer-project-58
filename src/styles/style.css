@@ -182,7 +182,7 @@ h1 {
 .video-link {
   display: inline-block;
   position: relative;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .video-preview {
@@ -190,7 +190,7 @@ h1 {
   height: 517px;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
   position: relative;
-  z-index: 10;
+  z-index: 9999;
   margin-bottom: -100px; /* Вылет на следующую секцию */
 }
 
