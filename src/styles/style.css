@@ -1,5 +1,11 @@
 /* Основные параметры лендинга */
 
+/* CSS переменные */
+:root {
+  --color-white: #ffffff;
+  --color-primary-dark: #42413C;
+}
+
 /* Цвета */
 .white { color: #fff; }
 .white-50 { color: #d7ccc0; }
@@ -36,10 +42,12 @@
 .font-size-34 { font-size: 34px; }
 
 /* Секции */
-.container { 
-  position: relative;
-  max-width: 1110px; 
+.container {
+  width: 1110px;
   margin: 0 auto;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* Выравнивание по центру */
@@ -154,10 +162,108 @@ h1 {
   text-align: center;
 }
 
-/* Специальные стили для секции предварительного просмотра изображения */
-#preview-image.preview-section {
-  padding-top: 100px;
-  padding-bottom: unset;
+/* Стили для секции с белым фоном */
+.bg-white {
+  position: relative;
+}
+
+.bg-white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  z-index: -1;
+  background-size: cover;
+}
+
+/* Стили для секции с серым фоном */
+.bg-grey {
+  position: relative;
+}
+
+.bg-grey::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-dark);
+  z-index: -1;
+  background-size: cover;
+}
+
+/* Стили для центрирования */
+.center {
+  text-align: center;
+}
+
+/* Стили для отступов */
+.margin-0 {
+  margin: 0;
+}
+
+.margin-30 {
+  margin: 30px 0;
+}
+
+/* Стили для темного цвета */
+.dark-color {
+  color: #FE8A02;
+  ;
+}
+
+/* Стили для видео контейнера */
+.video-container {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.video-container img {
+  display: block;
+  width: 919px;
+  height: 517px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стили для тени */
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* Стили для отступов */
+.padding-top-200 {
+  padding-top: 200px;
+}
+
+.margin-top-neg-200 {
+  margin-top: -200px;
+}
+
+/* Стили для заголовка "Что же это такое," */
+h2.center.margin-0 {
+  font-family: "Neucha", cursive;
+  line-height: 1.2em;
+  font-size: 60px;
+  font-weight: 400;
+  color: #2A2626;
+}
+
+/* Стили для параграфа "Что такое когнитивные искажения. Petrovna Channel" */
+p.center.margin-30 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  font-weight: 400;
+  color: var(--color-dark);
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 .preview-title {
