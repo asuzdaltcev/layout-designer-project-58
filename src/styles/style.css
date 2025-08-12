@@ -43,7 +43,8 @@
 
 /* Секции */
 .container {
-  width: 1110px;
+  max-width: 1110px;    /* вместо width: 1110px; */
+  width: 100%;
   margin: 0 auto;
   position: relative;
   padding-top: 100px;
@@ -78,6 +79,7 @@
 body {
   margin: 0;
   background-color: #ffffff;
+  scrollbar-gutter: stable both-edges;
 }
 
 h1 {
