@@ -77,7 +77,6 @@
 
 body {
   margin: 0 auto;
-  width: 1440px;
   background-color: #ffffff;
 }
 
@@ -424,14 +423,8 @@ p.center.margin-30 {
   padding-bottom: 0;
 }
 
-#premature-optimization .bias-header, #hyperbolic-depreciation .bias-header {
-  flex-direction: row-reverse;
-}
 
-#premature-optimization .manifestation-title, #hyperbolic-depreciation .manifestation-title {
-  background: #FFFFFF;
-  color: #B09A81;
-}
+
 
 #premature-optimization .bias-category, #hyperbolic-depreciation .bias-category {
   color: #D7CCC0;
@@ -443,6 +436,15 @@ p.center.margin-30 {
 
 #premature-optimization .manifestation-content p, #hyperbolic-depreciation .manifestation-content p {
   color: #FFFFFF;
+}
+
+#premature-optimization .bias-header, #hyperbolic-depreciation .bias-header {
+  flex-direction: row-reverse;
+}
+
+#premature-optimization .manifestation-title, #hyperbolic-depreciation .manifestation-title {
+  background: #FFFFFF;
+  color: #B09A81;
 }
 
 #hyperbolic-depreciation {
@@ -706,3 +708,25 @@ p.center.margin-30 {
   color: #1085C5;
   text-decoration: underline;
 }
+
+
+/* 1) Стабильная модель коробки */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* 2) Контейнер: можно оставить width:1110px, но сетку — без конфликта */
+.navigation-cards { grid-template-columns: repeat(3, 350px); column-gap: 30px; }
+.card { width: auto; } /* grid задаёт ширину, убираем фикс */
+
+/* 3) Слои/фоны — без глубоких отрицательных слоёв */
+.header { z-index: 0; }
+.section-background { position: relative; z-index: 0; }
+.section-background::before { z-index: -1; }
+#ikea-effect { z-index: 0; }
+
+/* 4) Стабильный скроллбар (опционально для скрин-тестов) */
+html { scrollbar-gutter: stable both-edges; }
+
+/* 5) Изображения без baseline-gap */
+img { vertical-align: top; }
