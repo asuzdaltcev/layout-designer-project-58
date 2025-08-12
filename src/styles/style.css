@@ -414,18 +414,18 @@ p.center.margin-30 {
   margin-bottom: 30px;
 }
 
-#premature-optimization .bias-title,
-#premature-optimization .bias-description,
-#hyperbolic-depreciation .bias-title,
-#hyperbolic-depreciation .bias-description {
-  color: #fff;
-}
-
 .bias-description {
   font-size: 34px;
   line-height: 1.2em;
   font-family: Neucha, cursive;
   color: #2a2626;
+}
+
+#premature-optimization .bias-title,
+#premature-optimization .bias-description,
+#hyperbolic-depreciation .bias-title,
+#hyperbolic-depreciation .bias-description {
+  color: #fff;
 }
 
 .manifestation-title {
@@ -470,12 +470,6 @@ p.center.margin-30 {
 #premature-optimization .bias-header,
 #hyperbolic-depreciation .bias-header {
   flex-direction: row-reverse;
-}
-
-#premature-optimization .manifestation-title,
-#hyperbolic-depreciation .manifestation-title {
-  background: #fff;
-  color: #b09a81;
 }
 
 #hyperbolic-depreciation {
@@ -563,9 +557,8 @@ p.center.margin-30 {
 }
 
 .footer-subscription {
-  margin-bottom: 76px;
   height: 190px;
-  background: #42413C;
+  background: #42413c;
   padding-top: 40px;
   margin-bottom: 0;
 }
@@ -585,7 +578,8 @@ p.center.margin-30 {
   padding-top: 15px;
 }
 
-.subscription-text h2, .subscription-text p {
+.subscription-text h2,
+.subscription-text p {
   font-size: 34px;
   line-height: 1.2em;
   font-family: Neucha, cursive;
@@ -612,7 +606,7 @@ p.center.margin-30 {
   font-size: 18px;
   line-height: 160%;
   letter-spacing: 0%;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .email-input {
@@ -629,7 +623,7 @@ p.center.margin-30 {
 .send-button {
   height: 50px;
   width: 70px;
-  background: #FE8A02;
+  background: #fe8a02;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -676,7 +670,7 @@ p.center.margin-30 {
   font-size: 14px;
   line-height: 1.6;
   font-family: "Open Sans", sans-serif;
-  color: #2A2626;
+  color: #2a2626;
   margin-bottom: 10px;
 }
 
@@ -686,6 +680,6 @@ p.center.margin-30 {
 
 .source-link a,
 .hexlet-link a {
-  color: #1085C5;
+  color: #1085c5;
   text-decoration: underline;
 }
