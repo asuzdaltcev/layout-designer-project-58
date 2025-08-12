@@ -318,7 +318,7 @@ p.center.margin-30 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  column-gap: 30px;
 }
 
 .card {
@@ -332,6 +332,11 @@ p.center.margin-30 {
   flex-direction: column;
   transition: all 0.3s ease;
   box-sizing: border-box;
+}
+
+/* Стили для последних 3 карточек (3, 4, 5) */
+.card:nth-child(n+4) {
+  height: 350px;
 }
 
 .card:hover:not(.title-card) {
