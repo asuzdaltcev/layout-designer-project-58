@@ -393,12 +393,60 @@ p.center.margin-30 {
   position: relative;
 }
 
+/* Специальные стили для секции "Эффект ИКЕА" */
+#ikea-effect.cognitive-bias-section {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#ikea-effect.cognitive-bias-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
 #premature-optimization {
   background: #B09A81;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#premature-optimization .bias-header, #hyperbolic-depreciation .bias-header {
+  flex-direction: row-reverse;
+}
+
+#premature-optimization .manifestation-title, #hyperbolic-depreciation .manifestation-title {
+  background: #FFFFFF;
+  color: #B09A81;
+}
+
+#premature-optimization .bias-category, #hyperbolic-depreciation .bias-category {
+  color: #D7CCC0;
+}
+
+#premature-optimization .bias-title, #premature-optimization .bias-description, #hyperbolic-depreciation .bias-title, #hyperbolic-depreciation .bias-description {
+  color: #FFFFFF;
+}
+
+#premature-optimization .manifestation-content p, #hyperbolic-depreciation .manifestation-content p {
+  color: #FFFFFF;
 }
 
 #hyperbolic-depreciation {
   background: #B09A81;
+}
+
+#hyperbolic-depreciation.cognitive-bias-section, #errors-in-planning.cognitive-bias-section {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .cognitive-bias-section::before {
@@ -418,12 +466,14 @@ p.center.margin-30 {
 .bias-header {
   display: flex;
   gap: 30px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 100px;
 }
 
 .bias-header-left {
   flex: 0 0 auto;
+  width: 578px;
+  height: 434px;
 }
 
 .bias-header-right {
@@ -435,12 +485,16 @@ p.center.margin-30 {
 
 .bias-image {
   vertical-align: middle;
+  width: 578px;
+  height: 434px;
+  object-fit: none;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .bias-category {
   font-size: 24px;
   line-height: 1.2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Neucha", cursive;
   color: #908D8B;
   margin-bottom: 10px;
 }
@@ -461,9 +515,10 @@ p.center.margin-30 {
 }
 
 .manifestation-title {
-  font-size: 34px;
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   background: #B09A81;
   padding: 5px 10px;
@@ -510,14 +565,6 @@ p.center.margin-30 {
   font-family: 'Open Sans', sans-serif;
   color: inherit;
   margin-bottom: 8px;
-}
-
-.cognitive-bias-section p {
-  font-size: 16px;
-  line-height: 1.6em;
-  font-family: 'Open Sans', sans-serif;
-  color: #2A2626;
-  margin: 16px 0;
 }
 
 /* Стили для подвала */
