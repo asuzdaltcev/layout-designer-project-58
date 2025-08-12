@@ -394,7 +394,7 @@ p.center.margin-30 {
 }
 
 /* Специальные стили для секции "Эффект ИКЕА" */
-#ikea-effect.cognitive-bias-section {
+#ikea-effect.cognitive-bias-section, #distortion-of-novelty.cognitive-bias-section {
   padding-top: 0px;
   padding-bottom: 0px;
 }
