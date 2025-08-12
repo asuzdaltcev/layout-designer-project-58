@@ -598,6 +598,10 @@ p.center.margin-30 {
   padding-right: 145px;
 }
 
+.subscription-text h2 {
+  padding-top: 15px;
+}
+
 .subscription-text h2, .subscription-text p {
   font-size: 34px;
   line-height: 1.2em;
@@ -679,6 +683,7 @@ p.center.margin-30 {
 }
 
 .footer-info {
+  padding-top: 60px;
   text-align: center;
 }
 
@@ -690,6 +695,10 @@ p.center.margin-30 {
   font-family: 'Open Sans', sans-serif;
   color: #2A2626;
   margin-bottom: 10px;
+}
+
+.copyright {
+  padding-top: 19px;
 }
 
 .source-link a,
