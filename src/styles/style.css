@@ -18,8 +18,8 @@
 .blue { color: #1085c5; }
 
 /* Шрифты */
-.open-sans { font-family: 'Open Sans', sans-serif; }
-.neucha { font-family: 'Neucha', cursive; }
+.open-sans { font-family: "Open Sans", sans-serif; }
+.neucha { font-family: "Neucha", cursive; }
 .neucha-regular {
   font-family: "Neucha", cursive;
   font-weight: 400;
@@ -33,7 +33,7 @@
 .line-height-16 { line-height: 1.6em; }
 
 /* Цвет шрифта: #2A2626 */
-.dark-text { color: #2A2626; }
+.dark-text { color: #2a2626; }
 
 /* Заголовки */
 .line-height-12 { line-height: 1.2em; }
@@ -50,9 +50,6 @@
   padding-bottom: 100px;
 }
 
-/* Выравнивание по центру */
-.center { text-align: center; }
-
 /* Отступы по 100 пикселей сверху и снизу */
 .padding-100 { padding: 100px 0; }
 
@@ -68,7 +65,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/background.png);
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -266,39 +263,15 @@ p.center.margin-30 {
   line-height: 1.6em;
 }
 
-.preview-title {
-  font-size: 60px;
-  line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  margin-bottom: 30px;
-}
-
 .main-color {
   color: #fe8a02;
 }
 
-.preview-subtitle {
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  color: #2A2626;
-  margin-bottom: 30px;
-}
 
-.video-link {
-  display: inline-block;
-  position: relative;
-  z-index: 9999;
-}
 
-.video-preview {
-  width: 919px;
-  height: 517px;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  position: relative;
-  z-index: 9999;
-  margin-bottom: -100px; /* Вылет на следующую секцию */
-}
+
+
+
 
 /* Стили для секции навигации */
 .navigation-section {
@@ -311,7 +284,7 @@ p.center.margin-30 {
 .navigation-title {
   font-size: 52px;
   line-height: 1.2em;
-  font-family: Neucha, cursive;
+  font-family: "Neucha", cursive;
 }
 
 .navigation-cards {
@@ -352,7 +325,7 @@ p.center.margin-30 {
 
 .card-number {
   font-size: 64px;
-  font-family: Neucha, cursive;
+  font-family: "Neucha", cursive;
   line-height: 1;
   margin-bottom: 40px;
   color: #42413c;
@@ -365,7 +338,7 @@ p.center.margin-30 {
 .card-title {
   font-size: 34px;
   line-height: 1.2em;
-  font-family: Neucha, cursive;
+  font-family: "Neucha", cursive;
   color: #fe8a02;
   margin-bottom: 16px;
 }
@@ -389,13 +362,13 @@ p.center.margin-30 {
 /* Стили для секций когнитивных искажений */
 .cognitive-bias-section {
   padding: 100px 0;
-  background: #F5F4F0;
+  background: #f5f4f0;
   position: relative;
 }
 
 /* Специальные стили для секции "Эффект ИКЕА" */
 #ikea-effect {
-  background-color: #F5F4F0;
+  background-color: #f5f4f0;
   z-index: -1;
 }
 
@@ -419,7 +392,7 @@ p.center.margin-30 {
 }
 
 #premature-optimization {
-  background: #B09A81;
+  background: #b09a81;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -427,34 +400,42 @@ p.center.margin-30 {
 
 
 
-#premature-optimization .bias-category, #hyperbolic-depreciation .bias-category {
-  color: #D7CCC0;
+#premature-optimization .bias-category,
+#hyperbolic-depreciation .bias-category {
+  color: #d7ccc0;
 }
 
-#premature-optimization .bias-title, #premature-optimization .bias-description, #hyperbolic-depreciation .bias-title, #hyperbolic-depreciation .bias-description {
-  color: #FFFFFF;
+#premature-optimization .bias-title,
+#premature-optimization .bias-description,
+#hyperbolic-depreciation .bias-title,
+#hyperbolic-depreciation .bias-description {
+  color: #fff;
 }
 
-#premature-optimization .manifestation-content p, #hyperbolic-depreciation .manifestation-content p {
-  color: #FFFFFF;
+#premature-optimization .manifestation-content p,
+#hyperbolic-depreciation .manifestation-content p {
+  color: #fff;
 }
 
-#premature-optimization .bias-header, #hyperbolic-depreciation .bias-header {
+#premature-optimization .bias-header,
+#hyperbolic-depreciation .bias-header {
   flex-direction: row-reverse;
 }
 
-#premature-optimization .manifestation-title, #hyperbolic-depreciation .manifestation-title {
-  background: #FFFFFF;
-  color: #B09A81;
+#premature-optimization .manifestation-title,
+#hyperbolic-depreciation .manifestation-title {
+  background: #fff;
+  color: #b09a81;
 }
 
 #hyperbolic-depreciation {
-  background: #B09A81;
+  background: #b09a81;
 }
 
-#hyperbolic-depreciation.cognitive-bias-section, #errors-in-planning.cognitive-bias-section {
-  padding-top: 0px;
-  padding-bottom: 0px;
+#hyperbolic-depreciation.cognitive-bias-section,
+#errors-in-planning.cognitive-bias-section {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .cognitive-bias-section::before {
@@ -502,33 +483,33 @@ p.center.margin-30 {
 .bias-category {
   font-size: 24px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  color: #908D8B;
+  font-family: Neucha, cursive;
+  color: #908d8b;
   margin-bottom: 10px;
 }
 
 .bias-title {
   font-size: 60px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  color: #2A2626;
+  font-family: Neucha, cursive;
+  color: #2a2626;
   margin-bottom: 30px;
 }
 
 .bias-description {
   font-size: 34px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  color: #2A2626;
+  font-family: Neucha, cursive;
+  color: #2a2626;
 }
 
 .manifestation-title {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
-  background: #B09A81;
+  background: #b09a81;
   padding: 5px 10px;
   margin-bottom: 20px;
   display: block;
@@ -549,16 +530,16 @@ p.center.margin-30 {
 .manifestation-content p {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  color: #2A2626;
+  font-family: "Open Sans", sans-serif;
+  color: #2a2626;
 }
 
 /* Стили для стандартных элементов в секциях когнитивных искажений */
 .cognitive-bias-section h2 {
   font-size: 60px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  color: #2A2626;
+  font-family: Neucha, cursive;
+  color: #2a2626;
   margin-bottom: 30px;
 }
 
@@ -570,15 +551,15 @@ p.center.margin-30 {
 .cognitive-bias-section li {
   font-size: 16px;
   line-height: 1.6em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: inherit;
   margin-bottom: 8px;
 }
 
 /* Стили для подвала */
 .footer {
-  background: #FFFFFF;
-  padding: 0 0 100px 0;
+  background: #fff;
+  padding: 0 0 100px;
   height: 581px;
 }
 
@@ -642,7 +623,7 @@ p.center.margin-30 {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   min-width: 300px;
 }
 
@@ -676,7 +657,7 @@ p.center.margin-30 {
 .agreement-text {
   font-size: 12px;
   line-height: 1.4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
 }
 
@@ -695,7 +676,7 @@ p.center.margin-30 {
 .hexlet-link {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #2A2626;
   margin-bottom: 10px;
 }
