@@ -2,8 +2,8 @@
 
 /* CSS переменные */
 :root {
-  --color-white: #ffffff;
-  --color-primary-dark: #42413C;
+  --color-white: #fff;
+  --color-primary-dark: #42413c;
 }
 
 /* Цвета */
@@ -77,11 +77,11 @@
 
 body {
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 h1 {
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -89,7 +89,7 @@ h1 {
 .header {
   height: 914px;
   position: relative;
-  background-color: #F5F4F0;
+  background-color: #f5f4f0;
   z-index: -5;
   overflow-x: clip;
 }
@@ -115,10 +115,10 @@ h1 {
 .header-content {
   display: flex;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #2A2626;
+  color: #2a2626;
   gap: 30px;
 }
 
@@ -127,13 +127,13 @@ h1 {
 }
 
 .header-column p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6em;
   letter-spacing: 0;
   vertical-align: bottom;
-  color: #2A2626;
+  color: #2a2626;
 }
 
 /* Стили для кнопки */
@@ -213,8 +213,7 @@ h1 {
 
 /* Стили для темного цвета */
 .dark-color {
-  color: #FE8A02;
-  ;
+  color: #fe8a02;
 }
 
 /* Стили для видео контейнера */
@@ -248,11 +247,11 @@ h1 {
 
 /* Стили для заголовка "Что же это такое," */
 h2.center.margin-0 {
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
   font-size: 60px;
   font-weight: 400;
-  color: #2A2626;
+  color: #2a2626;
 }
 
 /* Стили для параграфа "Что такое когнитивные искажения. Petrovna Channel" */
@@ -303,8 +302,8 @@ p.center.margin-30 {
 
 /* Стили для секции навигации */
 .navigation-section {
-  background: #42413C;
-  padding: 200px 0 100px 0; /* Дополнительный отступ сверху для компенсации вылета видео */
+  background: #42413c;
+  padding: 200px 0 100px; /* Дополнительный отступ сверху для компенсации вылета видео */
   position: relative;
   z-index: 1;
 }
@@ -312,7 +311,7 @@ p.center.margin-30 {
 .navigation-title {
   font-size: 52px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
 }
 
 .navigation-cards {
@@ -325,7 +324,7 @@ p.center.margin-30 {
 .card {
   width: 350px;
   height: 323px;
-  background: #F5F4F0;
+  background: #f5f4f0;
   padding: 24px;
   text-decoration: none;
   color: inherit;
@@ -341,22 +340,22 @@ p.center.margin-30 {
 }
 
 .card:hover:not(.title-card) {
-  background: #FE8A02;
+  background: #fe8a02;
   color: #fff;
 }
 
 .title-card {
-  background: #42413C;
+  background: #42413c;
   color: #fff;
   padding: 0;
 }
 
 .card-number {
   font-size: 64px;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   line-height: 1;
   margin-bottom: 40px;
-  color: #42413C;
+  color: #42413c;
 }
 
 .card:hover:not(.title-card) .card-number {
@@ -366,8 +365,8 @@ p.center.margin-30 {
 .card-title {
   font-size: 34px;
   line-height: 1.2em;
-  font-family: "Neucha", cursive;
-  color: #FE8A02;
+  font-family: Neucha, cursive;
+  color: #fe8a02;
   margin-bottom: 16px;
 }
 
@@ -378,8 +377,8 @@ p.center.margin-30 {
 .card-description {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  color: #2A2626;
+  font-family: "Open Sans", sans-serif;
+  color: #2a2626;
   flex-grow: 1;
 }
 
